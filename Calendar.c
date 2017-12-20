@@ -3,6 +3,7 @@
 
 int main()
 {
+    /*The input of variables and formulas to identify the day of the week in the calendar*/
     printf("Enter day, month and year \n ");
     int day, month, year;
     scanf("%d", &day);
@@ -12,6 +13,7 @@ int main()
     int y = year - a;
     int m = month + 12 * a - 2;
     day = (7000 + (day + y + y / 4 - y / 100 + y / 400 + (31 * m) /12)) % 7;
+    /*Replacing numeric values on the days of the week*/
     switch (day)
     {
     case 1:
